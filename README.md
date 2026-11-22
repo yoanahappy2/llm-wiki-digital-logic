@@ -58,9 +58,3 @@ python3 validate.py
 - [S04 MIT 6.004 Sequential Logic](https://ocw.mit.edu/courses/6-004-computation-structures-spring-2009/resources/mit6_004s09_lec05/)
 - [S05 MIT 6.004 Finite State Machines **第 6 章**](https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c6/c6s1/)
 
-## GitHub Pages（免費公開）
-
-1. 建立 public repository，例如 `llm-wiki-digital-logic`。
-2. 解壓縮 ZIP，上傳解壓後資料夾**裡面的所有檔案**到 repository 根目錄（`index.html` 必須在最上層）。
-3. **Settings → Pages → Deploy from a branch → main / (root) → Save**。
-4. 打開實際網址核對首頁、Wiki、流程和操作功能，將網址貼回 `submission.md`；未完成部署前不要填假網址。
