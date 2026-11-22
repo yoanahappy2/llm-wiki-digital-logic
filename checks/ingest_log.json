@@ -1,0 +1,16 @@
+{
+  "pipeline": "five curated source notes -> five markdown concept pages -> linked wiki.html -> slide deck index.html",
+  "source_count": 5,
+  "unique_urls": 5,
+  "concept_pages": 5,
+  "slides": 12,
+  "source_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05"
+  ],
+  "status": "ingested_to_local_wiki",
+  "caveat": "not third-party LLM Wiki app; source notes are curated summaries, not full-text article imports"
+}

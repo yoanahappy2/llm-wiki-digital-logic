@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "query_count": 3,
+  "results": [
+    {
+      "question": "XOR 跟 OR 有什麼不同？",
+      "retrieved_pages": [
+        "wiki/C01.md",
+        "wiki/C04.md",
+        "wiki/C02.md"
+      ],
+      "written_answer": "OR 只要至少有一個輸入是 1 就輸出 1；XOR 只有兩個輸入相異才輸出 1。例：A=B=1 時 OR=1、XOR=0。",
+      "cited_wiki_pages": [
+        "wiki/C01.md"
+      ],
+      "cited_source_ids": [
+        "S01"
+      ],
+      "verified_against_text": true,
+      "method": "index.md -> offline keyword retrieval -> ChatGPT reading relevant Wiki Markdown -> sourced answer"
+    },
+    {
+      "question": "半加器的進位如何算？",
+      "retrieved_pages": [
+        "wiki/C02.md",
+        "wiki/C04.md"
+      ],
+      "written_answer": "半加器的 Carry=A AND B，Sum=A XOR B。輸入 A=B=1，Carry=1、Sum=0，所以二進位結果為 10。半加器沒有額外的輸入進位。",
+      "cited_wiki_pages": [
+        "wiki/C02.md"
+      ],
+      "cited_source_ids": [
+        "S02"
+      ],
+      "verified_against_text": true,
+      "method": "index.md -> offline keyword retrieval -> ChatGPT reading relevant Wiki Markdown -> sourced answer"
+    },
+    {
+      "question": "FSM 為什麼需要記住狀態？",
+      "retrieved_pages": [
+        "wiki/C05.md",
+        "wiki/C04.md",
+        "wiki/C03.md"
+      ],
+      "written_answer": "相同的新輸入，在不同過去歷史下可能要有不同反應。FSM 用有限狀態保存必要的歷史，例如 MIT 的 0-1-1-0 組合鎖；下一狀態由目前狀態與輸入決定。",
+      "cited_wiki_pages": [
+        "wiki/C05.md",
+        "wiki/C04.md"
+      ],
+      "cited_source_ids": [
+        "S05",
+        "S04"
+      ],
+      "verified_against_text": true,
+      "method": "index.md -> offline keyword retrieval -> ChatGPT reading relevant Wiki Markdown -> sourced answer"
+    }
+  ],
+  "limitations": "Keyword retrieval is a deterministic offline program, not an LLM inference API. The narrative answers were drafted by ChatGPT from retrieved Wiki text in this conversation."
+}

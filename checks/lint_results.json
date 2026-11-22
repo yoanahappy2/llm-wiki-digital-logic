@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "total": 25,
+  "checks": [
+    {
+      "check": "5 份不同的來源網址",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "5 份非空 raw Markdown 來源卡",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "來源卡保持不可覆蓋性（SHA-256）",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "已改正 S05 網址與頁名",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "index.md 索引 5 頁",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C01 Wiki 引用正確來源",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C01 Wiki 連結有效",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C01 Wiki 完整教學結構",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C02 Wiki 引用正確來源",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C02 Wiki 連結有效",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C02 Wiki 完整教學結構",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C03 Wiki 引用正確來源",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C03 Wiki 連結有效",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C03 Wiki 完整教學結構",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C04 Wiki 引用正確來源",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C04 Wiki 連結有效",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C04 Wiki 完整教學結構",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C05 Wiki 引用正確來源",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C05 Wiki 連結有效",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "C05 Wiki 完整教學結構",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "五份資料均被簡報引用",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "每頁簡報都有來源追溯紀錄",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "log.md 包含5次逐篇 ingest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "預備流程包含來源失配證據",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "網站不含未渲染的舊模板字串",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "limitation": "Source-title agreement at remote sites was manually verified, not automatically scraped in this offline script."
+}

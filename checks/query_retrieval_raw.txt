@@ -1,0 +1,71 @@
+{
+  "query": "XOR 跟 OR 有什麼不同？",
+  "retrieved": [
+    {
+      "page": "wiki/C01.md",
+      "title": "邏輯閘與布林運算",
+      "source_id": "S01",
+      "match_score": 7,
+      "excerpt": "- AND：只有 A=1 且 B=1，輸出才為 1。\n- OR：只要 A 或 B 其中至少一個是 1，輸出就是 1。\n- NOT：將 0 換成 1，將 1 換成 0。\n- XOR：兩個輸入不同才輸出 1；1 XOR 1 = 0。\n- NAND(A,B)=NOT(A AND B)，且 NAND(A,A)=NOT(A)。"
+    },
+    {
+      "page": "wiki/C04.md",
+      "title": "組合邏輯與時序邏輯",
+      "source_id": "S04",
+      "match_score": 4,
+      "excerpt": "- 組合邏輯：理想穩定輸出僅由當前輸入決定，例如 AND、OR、半加器。\n- 時序邏輯：下一狀態或輸出可能取決於當前輸入加上儲存狀態。\n- 同步時序電路常以時鐘邊緣為共同更新基準。\n- 計數器、暫存器與 FSM 都會利用狀態資訊。"
+    },
+    {
+      "page": "wiki/C02.md",
+      "title": "半加器與算術邏輯",
+      "source_id": "S02",
+      "match_score": 2,
+      "excerpt": "- 兩個輸入 A、B，每個都是一個位元。\n- 和位 Sum = A XOR B。\n- 進位 Carry = A AND B。\n- 輸入 1、1 時，Sum=0 且 Carry=1，結果為二進位 10。\n- 半加器沒有 Carry-in；全加器可以加上輸入進位。"
+    }
+  ]
+}
+{
+  "query": "半加器的進位如何算？",
+  "retrieved": [
+    {
+      "page": "wiki/C02.md",
+      "title": "半加器與算術邏輯",
+      "source_id": "S02",
+      "match_score": 11,
+      "excerpt": "- 兩個輸入 A、B，每個都是一個位元。\n- 和位 Sum = A XOR B。\n- 進位 Carry = A AND B。\n- 輸入 1、1 時，Sum=0 且 Carry=1，結果為二進位 10。\n- 半加器沒有 Carry-in；全加器可以加上輸入進位。"
+    },
+    {
+      "page": "wiki/C04.md",
+      "title": "組合邏輯與時序邏輯",
+      "source_id": "S04",
+      "match_score": 1,
+      "excerpt": "- 組合邏輯：理想穩定輸出僅由當前輸入決定，例如 AND、OR、半加器。\n- 時序邏輯：下一狀態或輸出可能取決於當前輸入加上儲存狀態。\n- 同步時序電路常以時鐘邊緣為共同更新基準。\n- 計數器、暫存器與 FSM 都會利用狀態資訊。"
+    }
+  ]
+}
+{
+  "query": "FSM 為什麼需要記住狀態？",
+  "retrieved": [
+    {
+      "page": "wiki/C05.md",
+      "title": "有限狀態機 FSM",
+      "source_id": "S05",
+      "match_score": 9,
+      "excerpt": "- 狀態代表系統目前記住的必要資訊。\n- 下一狀態依目前狀態及輸入決定；轉移規則須沒有歧義。\n- 在 MIT 所示的同步 FSM，時鐘上升緣觸發狀態切換。\n- MIT 的組合鎖以序列 0-1-1-0 作為範例。\n- 本作品自行設計兩狀態 ON/OFF 開關燈示例，每次按鈕事件使狀態切換；非 MIT 原例題。"
+    },
+    {
+      "page": "wiki/C04.md",
+      "title": "組合邏輯與時序邏輯",
+      "source_id": "S04",
+      "match_score": 6,
+      "excerpt": "- 組合邏輯：理想穩定輸出僅由當前輸入決定，例如 AND、OR、半加器。\n- 時序邏輯：下一狀態或輸出可能取決於當前輸入加上儲存狀態。\n- 同步時序電路常以時鐘邊緣為共同更新基準。\n- 計數器、暫存器與 FSM 都會利用狀態資訊。"
+    },
+    {
+      "page": "wiki/C03.md",
+      "title": "D Flip-Flop 與記憶元件",
+      "source_id": "S03",
+      "match_score": 4,
+      "excerpt": "- DFF 是用來儲存一個位元狀態的基本元件。\n- 以正緣觸發 DFF 為例，時鐘上升緣到來時，D 被取樣並更新 Q。\n- 兩個有效上升緣之間，Q 維持上次儲存的值（此處不考慮 reset 等細節）。\n- 多個位元儲存元件可組成暫存器，再擴充至 RAM。"
+    }
+  ]
+}

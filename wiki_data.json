@@ -1,0 +1,365 @@
+{
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Project 1: Boolean Logic",
+      "publisher": "Nand2Tetris",
+      "url": "https://www.nand2tetris.org/project01",
+      "verified_on": "2026-11-22",
+      "topic": "邏輯閘與布林運算",
+      "concept_id": "C01",
+      "summary": "數位電路以簡單邏輯閘組成。AND、OR、NOT、XOR、MUX 等可以組合形成較複雜的運算電路；Nand2Tetris 的 Project 1 以 NAND 為基礎組合其他閘。",
+      "key_points": [
+        "AND：兩個輸入皆為 1，輸出才是 1。",
+        "OR：至少一個輸入為 1，輸出就是 1。",
+        "NOT：輸出是輸入的反相。",
+        "XOR：兩個輸入不同才輸出 1。",
+        "NAND = NOT(AND)，而 NOT(A) 可以由 NAND(A,A) 構成。"
+      ],
+      "check": "不要把 XOR（相異才為 1）誤寫成 OR（至少一個為 1）。",
+      "related": [
+        "C02",
+        "C03"
+      ]
+    },
+    {
+      "id": "S02",
+      "title": "Project 2: Boolean Arithmetic",
+      "publisher": "Nand2Tetris",
+      "url": "https://www.nand2tetris.org/project02",
+      "verified_on": "2026-11-22",
+      "topic": "半加器與算術邏輯",
+      "concept_id": "C02",
+      "summary": "從基本邏輯閘可逐步建立 Half Adder、Full Adder、Add16，最後建立算術邏輯單元 ALU。半加器處理兩個單位元相加，分別輸出和位與進位。",
+      "key_points": [
+        "半加器輸入 A、B，各為一個位元。",
+        "和位 Sum = A XOR B。",
+        "進位 Carry = A AND B。",
+        "當 A=B=1 時，二進位結果 10，Sum=0、Carry=1。"
+      ],
+      "check": "半加器不處理額外輸入進位；輸入進位屬於全加器的範圍。",
+      "related": [
+        "C01",
+        "C03"
+      ]
+    },
+    {
+      "id": "S03",
+      "title": "Project 3: Memory",
+      "publisher": "Nand2Tetris",
+      "url": "https://www.nand2tetris.org/project03",
+      "verified_on": "2026-11-22",
+      "topic": "D Flip-Flop 與記憶元件",
+      "concept_id": "C03",
+      "summary": "組合電路的輸出由當前輸入決定；有些系統需要跨時間儲存資訊。Project 3 使用 DFF 與其他電路建立位元、暫存器，進一步組成 RAM。",
+      "key_points": [
+        "DFF 是數位系統中的基本儲存元件。",
+        "在以正緣觸發的 DFF 為例，時鐘上升緣會將 D 載入 Q。",
+        "上升緣之間，Q 維持前次載入值（先不考慮 reset 等控制）。",
+        "多個 DFF 可構成儲存多位元的暫存器。"
+      ],
+      "check": "不是所有 DFF 都一定正緣觸發；教學範例必須明確標註是正緣觸發版本。",
+      "related": [
+        "C01",
+        "C04"
+      ]
+    },
+    {
+      "id": "S04",
+      "title": "Sequential Logic — MIT 6.004",
+      "publisher": "MIT OpenCourseWare",
+      "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2009/resources/mit6_004s09_lec05/",
+      "verified_on": "2026-11-22",
+      "topic": "組合邏輯與時序邏輯",
+      "concept_id": "C04",
+      "summary": "數位邏輯可區分為組合邏輯與具有狀態記憶的時序邏輯。後者通常用時鐘與暫存元件協調狀態更新，讓系統的輸出可能受過去狀態影響。",
+      "key_points": [
+        "組合邏輯：對固定輸入，理想穩定輸出由當前輸入決定。",
+        "時序邏輯：除當前輸入外，也依賴儲存的狀態。",
+        "時鐘可以作為同步時序電路更新狀態的基準。",
+        "資料儲存使計數器、控制器與 FSM 成為可能。"
+      ],
+      "check": "不要說所有時序電路都必須有時鐘；這裡討論的是同步時序電路。",
+      "related": [
+        "C03",
+        "C05"
+      ]
+    },
+    {
+      "id": "S05",
+      "title": "6.1 Annotated Slides — Finite State Machines",
+      "publisher": "MIT OpenCourseWare",
+      "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c6/c6s1/",
+      "verified_on": "2026-11-22",
+      "topic": "有限狀態機 FSM",
+      "concept_id": "C05",
+      "summary": "MIT 6.004 第 6 章解釋有限狀態機的狀態、轉移圖、轉移表、同步更新，並以輸入序列 0-1-1-0 的組合鎖說明為何需要記住狀態。",
+      "key_points": [
+        "FSM 以有限個狀態描述必要的輸入歷史。",
+        "下一狀態由目前狀態和輸入決定；轉移規則必須清楚且完整。",
+        "在教材的同步 FSM 例子中，時鐘上升緣觸發狀態更新。",
+        "MIT 原示例使用 0-1-1-0 組合鎖；我們簡報中的 ON/OFF 開關燈，是自行設計的簡化範例。"
+      ],
+      "check": "每個狀態與輸入組合應有明確的下一狀態。不要把自行設計的開關燈說成 MIT 的原始案例。",
+      "related": [
+        "C03",
+        "C04"
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "C01",
+      "title": "邏輯閘與布林運算",
+      "description": "數位電路把 0、1 當作邏輯狀態。Nand2Tetris 以 NAND 為基礎，逐步建立 AND、OR、NOT、XOR 等元件，再用它們組成更複雜的電路。",
+      "facts": [
+        "AND：只有 A=1 且 B=1，輸出才為 1。",
+        "OR：只要 A 或 B 其中至少一個是 1，輸出就是 1。",
+        "NOT：將 0 換成 1，將 1 換成 0。",
+        "XOR：兩個輸入不同才輸出 1；1 XOR 1 = 0。",
+        "NAND(A,B)=NOT(A AND B)，且 NAND(A,A)=NOT(A)。"
+      ],
+      "safety_check": "別把 OR 和 XOR 混淆：當 A=B=1 時，OR=1、XOR=0。",
+      "sources": [
+        "S01"
+      ],
+      "related": [
+        "C02",
+        "C04"
+      ]
+    },
+    {
+      "id": "C02",
+      "title": "半加器與算術邏輯",
+      "description": "半加器是由基本邏輯閘組成的最簡單二進位加法電路，能計算兩個一位元數字相加的和與進位。Nand2Tetris 進一步延伸至全加器和 ALU。",
+      "facts": [
+        "兩個輸入 A、B，每個都是一個位元。",
+        "和位 Sum = A XOR B。",
+        "進位 Carry = A AND B。",
+        "輸入 1、1 時，Sum=0 且 Carry=1，結果為二進位 10。",
+        "半加器沒有 Carry-in；全加器可以加上輸入進位。"
+      ],
+      "safety_check": "把 1+1=10 標為二進位；半加器沒有額外輸入進位。",
+      "sources": [
+        "S02"
+      ],
+      "related": [
+        "C01",
+        "C04"
+      ]
+    },
+    {
+      "id": "C03",
+      "title": "D Flip-Flop 與記憶元件",
+      "description": "單靠組合邏輯無法把前一次輸入保存到下一個時刻。D Flip-Flop（DFF）提供儲存位元的能力；多個儲存元件可組成暫存器與 RAM。",
+      "facts": [
+        "DFF 是用來儲存一個位元狀態的基本元件。",
+        "以正緣觸發 DFF 為例，時鐘上升緣到來時，D 被取樣並更新 Q。",
+        "兩個有效上升緣之間，Q 維持上次儲存的值（此處不考慮 reset 等細節）。",
+        "多個位元儲存元件可組成暫存器，再擴充至 RAM。"
+      ],
+      "safety_check": "正緣觸發只是本簡報選用的 DFF 類型，不代表全部 DFF 都是正緣觸發。",
+      "sources": [
+        "S03"
+      ],
+      "related": [
+        "C04",
+        "C05"
+      ]
+    },
+    {
+      "id": "C04",
+      "title": "組合邏輯與時序邏輯",
+      "description": "組合電路只看現在的輸入；時序電路會利用暫存元件保留狀態，因此能依先前的情況作出不同反應。這是理解同步計數器與 FSM 的前置概念。",
+      "facts": [
+        "組合邏輯：理想穩定輸出僅由當前輸入決定，例如 AND、OR、半加器。",
+        "時序邏輯：下一狀態或輸出可能取決於當前輸入加上儲存狀態。",
+        "同步時序電路常以時鐘邊緣為共同更新基準。",
+        "計數器、暫存器與 FSM 都會利用狀態資訊。"
+      ],
+      "safety_check": "不要把「同步時序電路常用時鐘」擴大成「所有時序電路都一定有時鐘」。",
+      "sources": [
+        "S04"
+      ],
+      "related": [
+        "C01",
+        "C03",
+        "C05"
+      ]
+    },
+    {
+      "id": "C05",
+      "title": "有限狀態機 FSM",
+      "description": "有限狀態機（FSM）將系統描述成有限幾個狀態、輸入條件與轉移規則。MIT 的教學用數位組合鎖示範如何記住部分輸入歷史，本簡報另以 ON/OFF 開關燈為簡化例題。",
+      "facts": [
+        "狀態代表系統目前記住的必要資訊。",
+        "下一狀態依目前狀態及輸入決定；轉移規則須沒有歧義。",
+        "在 MIT 所示的同步 FSM，時鐘上升緣觸發狀態切換。",
+        "MIT 的組合鎖以序列 0-1-1-0 作為範例。",
+        "本作品自行設計兩狀態 ON/OFF 開關燈示例，每次按鈕事件使狀態切換；非 MIT 原例題。"
+      ],
+      "safety_check": "來源曾錯連到 MIT 第 9 章，已改成 FSM 第 6 章；簡化按鈕案例不等同真正去彈跳電路。",
+      "sources": [
+        "S05"
+      ],
+      "related": [
+        "C03",
+        "C04"
+      ]
+    }
+  ],
+  "slide_plan": [
+    {
+      "id": "intro",
+      "kind": "cover",
+      "title": "從邏輯閘到有限狀態機",
+      "kicker": "DIGITAL LOGIC / INTRO 01",
+      "subtitle": "數位邏輯入門｜一份由 LLM Wiki 五篇來源整理的教學簡報",
+      "source_ids": []
+    },
+    {
+      "id": "goals",
+      "kind": "objectives",
+      "title": "今天會學到什麼？",
+      "kicker": "01 / 學習目標",
+      "items": [
+        "判斷 AND、OR、NOT、XOR 的輸出",
+        "理解半加器如何把二進位相加",
+        "分辨組合邏輯與時序邏輯",
+        "看懂簡單的有限狀態機（FSM）"
+      ],
+      "source_ids": []
+    },
+    {
+      "id": "logic",
+      "kind": "truth",
+      "title": "邏輯閘：把 0 和 1 變成規則",
+      "kicker": "02 / 基礎概念",
+      "concept_ids": [
+        "C01"
+      ],
+      "source_ids": [
+        "S01"
+      ]
+    },
+    {
+      "id": "xor",
+      "kind": "xor",
+      "title": "容易搞混：OR 和 XOR",
+      "kicker": "03 / 重要差異",
+      "concept_ids": [
+        "C01"
+      ],
+      "source_ids": [
+        "S01"
+      ]
+    },
+    {
+      "id": "nand",
+      "kind": "nand",
+      "title": "NAND：可以組出其他邏輯閘",
+      "kicker": "04 / 從小元件組大系統",
+      "concept_ids": [
+        "C01"
+      ],
+      "source_ids": [
+        "S01"
+      ]
+    },
+    {
+      "id": "adder",
+      "kind": "adder",
+      "title": "半加器：二進位怎麼相加？",
+      "kicker": "05 / 應用到運算",
+      "concept_ids": [
+        "C02"
+      ],
+      "source_ids": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "dff",
+      "kind": "dff",
+      "title": "D Flip-Flop：把資訊記住",
+      "kicker": "06 / 記憶與時鐘",
+      "concept_ids": [
+        "C03"
+      ],
+      "source_ids": [
+        "S03"
+      ]
+    },
+    {
+      "id": "compare",
+      "kind": "comparison",
+      "title": "組合邏輯 vs. 時序邏輯",
+      "kicker": "07 / 核心區別",
+      "concept_ids": [
+        "C04"
+      ],
+      "source_ids": [
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "fsm",
+      "kind": "fsm",
+      "title": "FSM：讓電路依照步驟行動",
+      "kicker": "08 / 控制流程",
+      "concept_ids": [
+        "C05"
+      ],
+      "source_ids": [
+        "S05"
+      ]
+    },
+    {
+      "id": "chain",
+      "kind": "chain",
+      "title": "五份資料串成一條學習路徑",
+      "kicker": "09 / Wiki 知識脈絡",
+      "concept_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05"
+      ],
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ]
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "title": "小測驗：檢查是否真的理解",
+      "kicker": "10 / 練習",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S05"
+      ]
+    },
+    {
+      "id": "end",
+      "kind": "end",
+      "title": "從 0 和 1 到有狀態的系統",
+      "kicker": "11 / 回顧與來源",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ]
+    }
+  ]
+}

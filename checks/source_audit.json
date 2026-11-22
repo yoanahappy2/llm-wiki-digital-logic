@@ -1,0 +1,53 @@
+{
+  "checked_date": "2026-11-22",
+  "method": "LLM-assisted manual comparison of official site title, relevant section text and concept; no crawling claims",
+  "pre_ingest_gate": "source topic must align with actual title/section",
+  "sources": [
+    {
+      "id": "S01",
+      "url": "https://www.nand2tetris.org/project01",
+      "verified_title": "Project 1: Boolean Logic",
+      "raw_note": "raw/S01.md",
+      "sha256": "0ac46bc37299317d5300fa32a32602db6d4e8696fbed66a41e2d4e928b9fd4f4",
+      "summary_storage": "Original authored paraphrase and evidence note; not full-text mirror",
+      "concept": "C01"
+    },
+    {
+      "id": "S02",
+      "url": "https://www.nand2tetris.org/project02",
+      "verified_title": "Project 2: Boolean Arithmetic",
+      "raw_note": "raw/S02.md",
+      "sha256": "340d69f6a66e0a81e54790e94c25702aaf515d8ff6f44763c187624cf1cc96d3",
+      "summary_storage": "Original authored paraphrase and evidence note; not full-text mirror",
+      "concept": "C02"
+    },
+    {
+      "id": "S03",
+      "url": "https://www.nand2tetris.org/project03",
+      "verified_title": "Project 3: Memory",
+      "raw_note": "raw/S03.md",
+      "sha256": "9933535665d2ce195480edfc9d065160783dd7bf12edcf5b73ce08b3d58f352a",
+      "summary_storage": "Original authored paraphrase and evidence note; not full-text mirror",
+      "concept": "C03"
+    },
+    {
+      "id": "S04",
+      "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2009/resources/mit6_004s09_lec05/",
+      "verified_title": "Sequential Logic — MIT 6.004",
+      "raw_note": "raw/S04.md",
+      "sha256": "edcedfc03761ae2d5d753e97f0f480bd5b3560db8a4538a05d7ec78cd60380ef",
+      "summary_storage": "Original authored paraphrase and evidence note; not full-text mirror",
+      "concept": "C04"
+    },
+    {
+      "id": "S05",
+      "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c6/c6s1/",
+      "verified_title": "6.1 Annotated Slides — Finite State Machines",
+      "raw_note": "raw/S05.md",
+      "sha256": "a388e43b1e021795e88d6939f919d073c08110fae297c50dc54149609eebc3f3",
+      "summary_storage": "Original authored paraphrase and evidence note; not full-text mirror",
+      "concept": "C05"
+    }
+  ],
+  "repair": "S05 corrected from MIT OCW chapter 9 to chapter 6"
+}

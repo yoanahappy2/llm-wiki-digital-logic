@@ -1,0 +1,23 @@
+PASS 至少五篇來源 5 independent URLs
+PASS 五個獨立 Wiki 概念頁 
+PASS 每張內容簡報的來源 ID 皆存在 
+PASS 五篇來源都出現在簡報 covered=['S01', 'S02', 'S03', 'S04', 'S05']
+PASS Wiki 不含未展開的模板變數 
+PASS 四組二進位真值組合正確 
+PASS index.html HTML 標題及正文 
+PASS wiki.html HTML 標題及正文 
+PASS workflow.html HTML 標題及正文 
+PASS 首頁可開啟 
+PASS 下一頁按鈕 
+PASS 鍵盤右鍵換頁 
+PASS AND、OR、XOR 操作 
+PASS 半加器 1+1 = 二進位10 
+PASS FSM OFF 切換 ON 
+PASS 小測驗頁 
+PASS 小測驗得分 3/3 
+PASS 簡報 JavaScript 無錯誤 
+PASS Wiki 含五個概念頁 
+PASS Wiki 搜尋可用 
+PASS Workflow 頁可開啟 
+PASS 手機寬度無水平溢出 [390, 390]
+ALL 22 CHECKS PASSED

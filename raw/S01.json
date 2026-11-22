@@ -1,0 +1,7 @@
+{
+  "id":"S01", "title":"Project 1: Boolean Logic", "publisher":"Nand2Tetris", "url":"https://www.nand2tetris.org/project01", "verified_on":"2026-11-22", "topic":"邏輯閘與布林運算", "concept_id":"C01",
+  "summary":"數位電路以簡單邏輯閘組成。AND、OR、NOT、XOR、MUX 等可以組合形成較複雜的運算電路；Nand2Tetris 的 Project 1 以 NAND 為基礎組合其他閘。",
+  "key_points":["AND：兩個輸入皆為 1，輸出才是 1。","OR：至少一個輸入為 1，輸出就是 1。","NOT：輸出是輸入的反相。","XOR：兩個輸入不同才輸出 1。","NAND = NOT(AND)，而 NOT(A) 可以由 NAND(A,A) 構成。"],
+  "check":"不要把 XOR（相異才為 1）誤寫成 OR（至少一個為 1）。",
+  "related":["C02","C03"]
+}

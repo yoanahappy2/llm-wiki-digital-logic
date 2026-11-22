@@ -1,0 +1,14 @@
+[
+ {"id":"intro","kind":"cover","title":"從邏輯閘到有限狀態機","kicker":"DIGITAL LOGIC / INTRO 01","subtitle":"數位邏輯入門｜一份由 LLM Wiki 五篇來源整理的教學簡報","source_ids":[]},
+ {"id":"goals","kind":"objectives","title":"今天會學到什麼？","kicker":"01 / 學習目標","items":["判斷 AND、OR、NOT、XOR 的輸出","理解半加器如何把二進位相加","分辨組合邏輯與時序邏輯","看懂簡單的有限狀態機（FSM）"],"source_ids":[]},
+ {"id":"logic","kind":"truth","title":"邏輯閘：把 0 和 1 變成規則","kicker":"02 / 基礎概念","concept_ids":["C01"],"source_ids":["S01"]},
+ {"id":"xor","kind":"xor","title":"容易搞混：OR 和 XOR","kicker":"03 / 重要差異","concept_ids":["C01"],"source_ids":["S01"]},
+ {"id":"nand","kind":"nand","title":"NAND：可以組出其他邏輯閘","kicker":"04 / 從小元件組大系統","concept_ids":["C01"],"source_ids":["S01"]},
+ {"id":"adder","kind":"adder","title":"半加器：二進位怎麼相加？","kicker":"05 / 應用到運算","concept_ids":["C02"],"source_ids":["S01","S02"]},
+ {"id":"dff","kind":"dff","title":"D Flip-Flop：把資訊記住","kicker":"06 / 記憶與時鐘","concept_ids":["C03"],"source_ids":["S03"]},
+ {"id":"compare","kind":"comparison","title":"組合邏輯 vs. 時序邏輯","kicker":"07 / 核心區別","concept_ids":["C04"],"source_ids":["S03","S04"]},
+ {"id":"fsm","kind":"fsm","title":"FSM：讓電路依照步驟行動","kicker":"08 / 控制流程","concept_ids":["C05"],"source_ids":["S05"]},
+ {"id":"chain","kind":"chain","title":"五份資料串成一條學習路徑","kicker":"09 / Wiki 知識脈絡","concept_ids":["C01","C02","C03","C04","C05"],"source_ids":["S01","S02","S03","S04","S05"]},
+ {"id":"quiz","kind":"quiz","title":"小測驗：檢查是否真的理解","kicker":"10 / 練習","source_ids":["S01","S02","S03","S05"]},
+ {"id":"end","kind":"end","title":"從 0 和 1 到有狀態的系統","kicker":"11 / 回顧與來源","source_ids":["S01","S02","S03","S04","S05"]}
+]

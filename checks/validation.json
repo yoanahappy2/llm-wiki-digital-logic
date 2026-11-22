@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "tested": 22,
+  "checks": [
+    {
+      "check": "至少五篇來源",
+      "pass": true,
+      "detail": "5 independent URLs"
+    },
+    {
+      "check": "五個獨立 Wiki 概念頁",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "每張內容簡報的來源 ID 皆存在",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "五篇來源都出現在簡報",
+      "pass": true,
+      "detail": "covered=['S01', 'S02', 'S03', 'S04', 'S05']"
+    },
+    {
+      "check": "Wiki 不含未展開的模板變數",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "四組二進位真值組合正確",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "index.html HTML 標題及正文",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "wiki.html HTML 標題及正文",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "workflow.html HTML 標題及正文",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "首頁可開啟",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "下一頁按鈕",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "鍵盤右鍵換頁",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "AND、OR、XOR 操作",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "半加器 1+1 = 二進位10",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "FSM OFF 切換 ON",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "小測驗頁",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "小測驗得分 3/3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "簡報 JavaScript 無錯誤",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Wiki 含五個概念頁",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Wiki 搜尋可用",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Workflow 頁可開啟",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "手機寬度無水平溢出",
+      "pass": true,
+      "detail": "[390, 390]"
+    }
+  ],
+  "browser": "Chromium headless (desktop + mobile)",
+  "artifacts": [
+    "desktop-cover.png",
+    "desktop-logic.png",
+    "desktop-wiki.png",
+    "mobile-cover.png"
+  ]
+}

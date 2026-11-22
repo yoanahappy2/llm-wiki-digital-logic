@@ -1,0 +1,12 @@
+{
+  "recorded_on": "2026-11-22",
+  "source_id": "S05",
+  "original_record": {
+    "title": "9.1 Annotated Slides — Finite-State Machines",
+    "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c9/c9s1/",
+    "topic": "有限狀態機 FSM"
+  },
+  "verification": "Manual comparison with MIT OCW page headings: c9/c9s1 is 9 Designing an Instruction Set, not 6 Finite State Machines.",
+  "finding": "FAIL: title/subject mismatch",
+  "next_action": "Use c6/c6s1 and add source-topic alignment gate before ingest"
+}

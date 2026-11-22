@@ -1,0 +1,139 @@
+[
+  {
+    "slide_id": "intro",
+    "lesson_title": "從邏輯閘到有限狀態機",
+    "wiki_pages": [],
+    "source_ids": [],
+    "status": "intro/quiz/summary slide"
+  },
+  {
+    "slide_id": "goals",
+    "lesson_title": "今天會學到什麼？",
+    "wiki_pages": [],
+    "source_ids": [],
+    "status": "intro/quiz/summary slide"
+  },
+  {
+    "slide_id": "logic",
+    "lesson_title": "邏輯閘：把 0 和 1 變成規則",
+    "wiki_pages": [
+      "wiki/C01.md"
+    ],
+    "source_ids": [
+      "S01"
+    ],
+    "status": "checked against source-tagged Markdown pages"
+  },
+  {
+    "slide_id": "xor",
+    "lesson_title": "容易搞混：OR 和 XOR",
+    "wiki_pages": [
+      "wiki/C01.md"
+    ],
+    "source_ids": [
+      "S01"
+    ],
+    "status": "checked against source-tagged Markdown pages"
+  },
+  {
+    "slide_id": "nand",
+    "lesson_title": "NAND：可以組出其他邏輯閘",
+    "wiki_pages": [
+      "wiki/C01.md"
+    ],
+    "source_ids": [
+      "S01"
+    ],
+    "status": "checked against source-tagged Markdown pages"
+  },
+  {
+    "slide_id": "adder",
+    "lesson_title": "半加器：二進位怎麼相加？",
+    "wiki_pages": [
+      "wiki/C02.md"
+    ],
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "status": "checked against source-tagged Markdown pages"
+  },
+  {
+    "slide_id": "dff",
+    "lesson_title": "D Flip-Flop：把資訊記住",
+    "wiki_pages": [
+      "wiki/C03.md"
+    ],
+    "source_ids": [
+      "S03"
+    ],
+    "status": "checked against source-tagged Markdown pages"
+  },
+  {
+    "slide_id": "compare",
+    "lesson_title": "組合邏輯 vs. 時序邏輯",
+    "wiki_pages": [
+      "wiki/C04.md"
+    ],
+    "source_ids": [
+      "S03",
+      "S04"
+    ],
+    "status": "checked against source-tagged Markdown pages"
+  },
+  {
+    "slide_id": "fsm",
+    "lesson_title": "FSM：讓電路依照步驟行動",
+    "wiki_pages": [
+      "wiki/C05.md"
+    ],
+    "source_ids": [
+      "S05"
+    ],
+    "status": "checked against source-tagged Markdown pages"
+  },
+  {
+    "slide_id": "chain",
+    "lesson_title": "五份資料串成一條學習路徑",
+    "wiki_pages": [
+      "wiki/C01.md",
+      "wiki/C02.md",
+      "wiki/C03.md",
+      "wiki/C04.md",
+      "wiki/C05.md"
+    ],
+    "source_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05"
+    ],
+    "status": "checked against source-tagged Markdown pages"
+  },
+  {
+    "slide_id": "quiz",
+    "lesson_title": "小測驗：檢查是否真的理解",
+    "wiki_pages": [],
+    "source_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S05"
+    ],
+    "status": "intro/quiz/summary slide"
+  },
+  {
+    "slide_id": "end",
+    "lesson_title": "從 0 和 1 到有狀態的系統",
+    "wiki_pages": [],
+    "source_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05"
+    ],
+    "status": "intro/quiz/summary slide"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "id":"S04", "title":"Sequential Logic — MIT 6.004", "publisher":"MIT OpenCourseWare", "url":"https://ocw.mit.edu/courses/6-004-computation-structures-spring-2009/resources/mit6_004s09_lec05/", "verified_on":"2026-11-22", "topic":"組合邏輯與時序邏輯", "concept_id":"C04",
+  "summary":"數位邏輯可區分為組合邏輯與具有狀態記憶的時序邏輯。後者通常用時鐘與暫存元件協調狀態更新，讓系統的輸出可能受過去狀態影響。",
+  "key_points":["組合邏輯：對固定輸入，理想穩定輸出由當前輸入決定。","時序邏輯：除當前輸入外，也依賴儲存的狀態。","時鐘可以作為同步時序電路更新狀態的基準。","資料儲存使計數器、控制器與 FSM 成為可能。"],
+  "check":"不要說所有時序電路都必須有時鐘；這裡討論的是同步時序電路。",
+  "related":["C03","C05"]
+}

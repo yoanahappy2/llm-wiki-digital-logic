@@ -1,0 +1,21 @@
+{
+  "id": "S05",
+  "title": "6.1 Annotated Slides — Finite State Machines",
+  "publisher": "MIT OpenCourseWare",
+  "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c6/c6s1/",
+  "verified_on": "2026-11-22",
+  "topic": "有限狀態機 FSM",
+  "concept_id": "C05",
+  "summary": "MIT 6.004 第 6 章解釋有限狀態機的狀態、轉移圖、轉移表、同步更新，並以輸入序列 0-1-1-0 的組合鎖說明為何需要記住狀態。",
+  "key_points": [
+    "FSM 以有限個狀態描述必要的輸入歷史。",
+    "下一狀態由目前狀態和輸入決定；轉移規則必須清楚且完整。",
+    "在教材的同步 FSM 例子中，時鐘上升緣觸發狀態更新。",
+    "MIT 原示例使用 0-1-1-0 組合鎖；我們簡報中的 ON/OFF 開關燈，是自行設計的簡化範例。"
+  ],
+  "check": "每個狀態與輸入組合應有明確的下一狀態。不要把自行設計的開關燈說成 MIT 的原始案例。",
+  "related": [
+    "C03",
+    "C04"
+  ]
+}

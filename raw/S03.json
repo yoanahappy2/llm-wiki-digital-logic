@@ -1,0 +1,7 @@
+{
+  "id":"S03", "title":"Project 3: Memory", "publisher":"Nand2Tetris", "url":"https://www.nand2tetris.org/project03", "verified_on":"2026-11-22", "topic":"D Flip-Flop 與記憶元件", "concept_id":"C03",
+  "summary":"組合電路的輸出由當前輸入決定；有些系統需要跨時間儲存資訊。Project 3 使用 DFF 與其他電路建立位元、暫存器，進一步組成 RAM。",
+  "key_points":["DFF 是數位系統中的基本儲存元件。","在以正緣觸發的 DFF 為例，時鐘上升緣會將 D 載入 Q。","上升緣之間，Q 維持前次載入值（先不考慮 reset 等控制）。","多個 DFF 可構成儲存多位元的暫存器。"],
+  "check":"不是所有 DFF 都一定正緣觸發；教學範例必須明確標註是正緣觸發版本。",
+  "related":["C01","C04"]
+}

@@ -1,0 +1,7 @@
+{
+  "id":"S02", "title":"Project 2: Boolean Arithmetic", "publisher":"Nand2Tetris", "url":"https://www.nand2tetris.org/project02", "verified_on":"2026-11-22", "topic":"半加器與算術邏輯", "concept_id":"C02",
+  "summary":"從基本邏輯閘可逐步建立 Half Adder、Full Adder、Add16，最後建立算術邏輯單元 ALU。半加器處理兩個單位元相加，分別輸出和位與進位。",
+  "key_points":["半加器輸入 A、B，各為一個位元。","和位 Sum = A XOR B。","進位 Carry = A AND B。","當 A=B=1 時，二進位結果 10，Sum=0、Carry=1。"],
+  "check":"半加器不處理額外輸入進位；輸入進位屬於全加器的範圍。",
+  "related":["C01","C03"]
+}
