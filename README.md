@@ -1,6 +1,6 @@
 # Week 10 — 數位邏輯 LLM Wiki × HTML 教學簡報（可交作業版）
 
-本作品以本次對話中的 ChatGPT 整理五份公開教育資料的**中文來源卡**，再逐篇建立與修正持久化的 Markdown Wiki，最後由這個 Wiki 渲染教學 HTML。遵循課堂第 33–34 頁及 Karpathy 的 `raw/ → wiki/` 思路：保留來源、更新概念頁、建立索引和日誌、查詢、lint。
+整理五份公開教育資料的**中文來源卡**，再逐篇建立與修正持久化的 Markdown Wiki，最後由這個 Wiki 渲染教學 HTML。
 
 ## 檔案內容說明
 
@@ -41,13 +41,6 @@ python3 lint_wiki.py
 python3 build.py
 python3 validate.py
 ```
-
-
-## 本次真的發生過的錯誤與改進
-
-- **來源核對錯誤：**S05 指向 MIT `/c9/c9s1/` 指令集章節，錯誤地標示為 FSM。重查官方網站後，改成 `/c6/c6s1/`。因此把**來源標題／章節相符**檢查提前到 ingest 前，而不是做完簡報才回頭查。
-- **Wiki HTML 模板錯誤：**原版曾顯示未展開的模板字串，修正後加上模板殘留檢查。
-- **內容追溯問題：**舊版 `build.py` 會直接用 raw JSON 重寫 Wiki，導致 Wiki 不能累積。新版改成先由 LLM 產生 Markdown Wiki，再**以現存 Markdown 為知識來源**產生網頁與簡報中的要點；重跑不會覆蓋概念頁。
 
 ## 資料來源
 
