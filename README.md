@@ -2,7 +2,7 @@
 
 本作品以本次對話中的 ChatGPT 整理五份公開教育資料的**中文來源卡**，再逐篇建立與修正持久化的 Markdown Wiki，最後由這個 Wiki 渲染教學 HTML。遵循課堂第 33–34 頁及 Karpathy 的 `raw/ → wiki/` 思路：保留來源、更新概念頁、建立索引和日誌、查詢、lint。
 
-## 先看哪個檔案？
+## 檔案內容說明
 
 - `index.html` — 可瀏覽的 **12 頁 HTML 教學簡報**（有邏輯閘、半加器、FSM 操作與小測驗）。
 - `wiki.html` — 可搜尋的 **五個概念頁**，附來源鏈接。
@@ -42,7 +42,6 @@ python3 build.py
 python3 validate.py
 ```
 
-注意： `query_wiki.py` 是離線文字檢索，用來示範 Query 節點；LLM 整理和答案撰寫已在這次 ChatGPT 協作中完成，不聲稱 Python 在背景自行呼叫 LLM。`raw/` 提供的是五份獨立公開教材的摘要卡，不是未經授權的原文複本，亦不宣稱已使用第三方 LLM Wiki 平台擷取全文。完整原文可由來源 URL 查閱。
 
 ## 本次真的發生過的錯誤與改進
 
